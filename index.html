@@ -347,19 +347,46 @@
     </div>
 </div>
     <!-- 付费解析 CTA -->
-    <p class="cta-main">
-    如果你想更清晰地理解自己的
-    <strong>天赋使命、财富路径以及亲密关系结构</strong>，
-    以及这一生真正需要完成的
-    <strong>人生课题</strong>。
-  </p >
-  <p class="cta-sub">
-    可以预约一对一深度解读
-  </p >
+    <div class="cta">
+  <ul class="cta-list">
+    <li>清晰地了解自己的 <strong>天赋使命</strong></li>
+    <li>真正适合你的 <strong>财富路径</strong></li>
+    <li>看清你的 <strong>亲密关系结构</strong></li>
+    <li>梳理这一生真正需要完成的 <strong>人生课题</strong></li>
+  </ul>
+<style>
+.cta {
+  margin-top: 32px;
+}
 
-  <a class="cta-btn" href=" ">预约一对一深度解读</a >
-</div>
+.cta-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 24px 0;
+}
 
+.cta-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+.cta-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #81D8D0; /* Tiffany 蓝 */
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.cta-list strong {
+  font-weight: 600;
+}
     <!-- 按钮跳到支付宝二维码 / 支付链接 -->
     <a class="cta-btn"
     href="https://qr.alipay.com/2m612501mnir8ltievliw57"
@@ -478,5 +505,6 @@ function calcMatrix() {
 </body>
 
 </html>
+
 
 
