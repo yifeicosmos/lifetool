@@ -212,18 +212,18 @@
     <label>出生日期（阳历）</label>
     <div class="date-inputs">
         <input id="day" type="number" placeholder="日 18" min="1" max="31" />
-        <input id="month" type="number" placeholder="月 09" min="1" max="12" />
-        <input id="year" type="number" placeholder="年 1999" min="1800" max="2100" />
+        <input id="month" type="number" placeholder="月 08" min="1" max="12" />
+        <input id="year" type="number" placeholder="年 1999" min="1100" max="2100" />
     </div>
     <div class="hint">
-        例如：18 / 09 / 1999。<br/>
+        例如：18 / 08 / 1999。<br/>
         解析顺序建议：<br/>
         1️⃣ 先看整体——九宫格数字分布越满、越均衡，说明整体命格能量越饱满；<br/>
         2️⃣ 再看连线——横排、竖排、对角线能连成线，连线越多，对应主题的能量通道越顺；<br/>
         3️⃣ 最后看频次——某个数字出现次数越多，该类特质越强；完全没有出现，则是此生需要刻意补课和修炼的课题。
     </div>
 
-    <button class="btn-primary" onclick="calcMatrix()">生成方阵</button>
+    <button class="btn-primary" onclick="alert('按钮能点')">生成方阵</button>
 
     <div id="error"></div>
 
@@ -505,6 +505,7 @@ function calcMatrix() {
 </body>
 
 </html>
+
 
 
 
