@@ -447,8 +447,8 @@ function calcMatrix() {
     var year = parseInt(yearVal, 10);
 
     if (isNaN(day) || isNaN(month) || isNaN(year) ||
-        day < 1 || day > 31 || month < 1 || month > 12 || year < 1800 || year > 2100) {
-        errorDiv.textContent = '日期格式好像不太对，请检查一下范围（1–31 / 1–12 / 1800–2100）。';
+        day < 1 || day > 31 || month < 1 || month > 12 || year < 1100 || year > 2100) {
+        errorDiv.textContent = '日期格式好像不太对，请检查一下范围（1–31 / 1–12 / 1100–2100）。';
         errorDiv.style.display = 'block';
         return;
     }
@@ -496,7 +496,7 @@ function calcMatrix() {
         cell.textContent = times > 0 ? String(n).repeat(times) : '';
     }
 
-    // 上方日期标题，例如：01.06.1989 – 方阵
+    // 上方日期标题，例如：18.08.1999 – 方阵
     titleDiv.textContent = dd + '.' + mm + '.' + yyyy + ' – 方阵';
 
     resultDiv.style.display = 'block';
@@ -505,6 +505,7 @@ function calcMatrix() {
 </body>
 
 </html>
+
 
 
 
