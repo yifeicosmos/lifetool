@@ -270,6 +270,23 @@
   font-weight: 800;
   font-size: 14px;
 }
+/* CTA 区域整体靠左 */
+.cta {
+  text-align: left;
+}
+
+/* 列表整体 */
+.cta-list li {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #111;
+}
+
+/* 主语高亮：Tiffany 蓝 + 强调 */
+.cta-list li strong {
+  font-weight: 800;
+  color: #0ABAB5; /* Tiffany 蓝 */
+}
   
     </style>
 </head>
@@ -425,11 +442,11 @@
 </div>
 
   <ul class="cta-list">
-    <li>清晰地了解自己的天赋使命</li>
-    <li>真正适合你的财富路径</li>
-    <li>看清你的亲密关系结构</li>
-    <li>梳理这一生真正需要完成的人生课题</li>
-  </ul>
+  <li>清晰地了解自己的 <strong>天赋使命</strong></li>
+  <li>真正适合你的 <strong>财富路径</strong></li>
+  <li>看清你的 <strong>亲密关系结构</strong></li>
+  <li>梳理这一生真正需要完成的 <strong>人生课题</strong></li>
+</ul>
 
   <!-- 支付宝跳转 -->
   <a
@@ -567,6 +584,7 @@ if (cta) {
 </script>
 </body>
 </html>
+
 
 
 
