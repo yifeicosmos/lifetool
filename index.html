@@ -534,9 +534,16 @@ function calcMatrix() {
 // ⬇️ 自动滚动到 CTA 并高亮（安全写法）
 var cta = document.getElementById('cta');
 if (cta) {
-    cta.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    cta.classList.add('highlight');
+    setTimeout(function () {
+        cta.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        cta.classList.add('highlight');
+    }, 0);
 }
+}
+</script>
+</body>
+</html>
+
 
 
 
