@@ -200,7 +200,38 @@
             color: #aaa;
             text-align: center;
         }
+.cta {
+  margin-top: 32px;
+}
 
+.cta-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 24px 0;
+}
+
+.cta-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+.cta-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #81D8D0;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.cta-list strong {
+  font-weight: 600;
+}
      
     </style>
 </head>
@@ -223,7 +254,10 @@
         3️⃣ 最后看频次——某个数字出现次数越多，该类特质越强；完全没有出现，则是此生需要刻意补课和修炼的课题。
     </div>
 
-    <button class="btn-primary" onclick="calcMatrix()">生成方阵</button>
+    <button type="button" class="btn-primary" onclick="calcMatrix()">
+  生成方阵
+</button>
+
 
     <div id="error"></div>
 
@@ -347,52 +381,35 @@
     </div>
 </div>
     <!-- 付费解析 CTA -->
-    <div class="cta">
+    <!-- 付费解析 CTA -->
+<div class="cta">
   <ul class="cta-list">
     <li>清晰地了解自己的 <strong>天赋使命</strong></li>
     <li>真正适合你的 <strong>财富路径</strong></li>
     <li>看清你的 <strong>亲密关系结构</strong></li>
     <li>梳理这一生真正需要完成的 <strong>人生课题</strong></li>
   </ul>
-<style>
-.cta {
-  margin-top: 32px;
-}
 
-.cta-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 24px 0;
-}
-
-.cta-list li {
-  position: relative;
-  padding-left: 28px;
-  margin-bottom: 10px;
-  line-height: 1.6;
-  font-size: 16px;
-  color: #333;
-}
-
-.cta-list li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #81D8D0; /* Tiffany 蓝 */
-  font-weight: 500;
-  opacity: 0.85;
-}
-
-.cta-list strong {
-  font-weight: 600;
-}
-    <!-- 按钮跳到支付宝二维码 / 支付链接 -->
-    <a class="cta-btn"
+  <!-- 跳转支付宝付款 -->
+  <a
+    class="cta-btn"
     href="https://qr.alipay.com/2m612501mnir8ltievliw57"
-   target="_blank"
-   rel="noopener noreferrer">
-    🔮 点击这里付款并预约解读
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    🔮 解锁完整命盘 · 预约一对一解读
+  </a>
+
+  <p style="font-size:12px; color:#0ABAB5; margin-top:8px;">
+    付款请备注：毕达哥拉斯
+  </p>
+
+  <p style="font-size:12px; color:#0ABAB5; margin-top:2px;">
+    付款成功后，请添加微信：
+    <strong style="color:#0ABAB5;">yifeicosmos</strong>，
+    发送付款截图 + 出生日期（阳历），我会在约定时间内进行一对一解析。
+  </p>
+</div>
 </a >
 
     <p style="font-size:12px; color:#0ABAB5; margin-top:8px;">
@@ -505,6 +522,7 @@ function calcMatrix() {
 </body>
 
 </html>
+
 
 
 
